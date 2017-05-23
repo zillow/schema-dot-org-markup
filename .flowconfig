@@ -1,0 +1,8 @@
+[ignore]
+.*/node_modules/fbjs/.*
+.*/node_modules/fbjs/.*
+.*/node_modules/conventional-changelog-core/test/.*
+.*/\.braavos/.*
+.*/node_modules/flux/.*
+.*/config/templates/.*
+
