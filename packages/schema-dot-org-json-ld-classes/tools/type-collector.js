@@ -17,17 +17,7 @@ export default class TypeCollector {
     constructor(typeName : string) {
         this.parents = {};
         this.schemas = {};
-        this.typeName
-    }
-
-    computeInheritance() : Array<string> {
-        return Object.keys(this.parents).sort(function (item1, item2) {
-            let result = 0;
-            if (item1 !== item2) {
-                result = inheritance.is(item1, item2) ? -1 : 1;
-            }
-            return result;
-        });
+        this.typeName = typeName;
     }
 
     recordParent(id: string, subClassOf : any) : string {
@@ -46,33 +36,24 @@ export default class TypeCollector {
         if (subClassOf) {
             this.recordParent(id, subClassOf);
         }
-        try {
-            if (Array.isArray(domain)) {
-                fromType = domain.reduce((accumulator, value) => {
-                    return inheritance.is(this.typeName, extractType(value)) ? value : accumulator;
-                }, null);
-            }
-            if (fromType) {
-                const fromName = extractType(fromType);
+        if (Array.isArray(domain)) {
+            fromType = domain.reduce((accumulator, value) => {
+                return inheritance.is(this.typeName, extractType(value)) ? value : accumulator;
+            }, null);
+        }
+        if (fromType) {
+            const fromName = extractType(fromType);
+            const typeElem = element['schema:rangeIncludes'];
+            let type : Array<string>;
 
-                if (typeof fromName != 'string') {
-                    throw new Error(domain);
-                }
-
-                const typeElem = element['schema:rangeIncludes'];
-                let type : Array<string>;
-                if (Array.isArray(typeElem)) {
-                    type = typeElem.map(function (value) {
-                        extractType(value);
-                    })
-                } else {
-                    type = [extractType(typeElem)];
-                }
-                this.schemas[fromName] = [].concat({property: id, types: type}, this.schemas[fromName]);
+            if (Array.isArray(typeElem)) {
+                type = typeElem.map(function (value) {
+                    return extractType(value);
+                })
+            } else {
+                type = [extractType(typeElem)];
             }
-        } catch (e) {
-            console.log("ouch", e);
-            throw e;
+            this.schemas[fromName] = [].concat({property: id, types: type}, this.schemas[fromName]);
         }
     }
 }
