@@ -29,7 +29,7 @@ if (rc.presets) {
         let result;
 
         if (typeof preset === 'string') {
-            if (preset === 'flow') {
+            if (['flow', 'react'].includes(preset)) {
                 result = [preset];
             } else {
                 result = [preset, presetOptions];
