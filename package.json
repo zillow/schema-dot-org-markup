@@ -1,7 +1,7 @@
 {
   "name": "schema-dot-org-markup",
   "version": "0.1.0",
-  "description": "Lightweight modules to generate Schema.org markup",
+  "description": "Lightweight modules to generate Schema.org JSON-LD markup",
   "main": "index.js",
   "scripts": {
     "test": "gulp test"
@@ -10,8 +10,8 @@
     "schema.org",
     "jsonld"
   ],
-  "author": "John Bito <jwb@ballardview.com>",
-  "license": "ISC",
+  "author": "John Bito (http://jwbito.ballardview.com/)",
+  "license": "UPL-1.0",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-plugin-add-module-exports": "^0.2.1",
@@ -22,6 +22,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "flow-bin": "^0.46.0",
     "lerna": "^2.0.0-rc.4"
   }
 }

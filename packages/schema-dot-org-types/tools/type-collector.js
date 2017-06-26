@@ -1,5 +1,6 @@
 // @flow
 import Inheritance from 'schema.org';
+import type {TypeMembers, TypeInheritance} from "./types";
 
 const inheritance = new Inheritance();
 const ID = '@id';
@@ -9,9 +10,14 @@ function extractType(domain : any) {
     return domain[ID].match(SIMPLE_NAME_PAT)[1];
 }
 
+const INTANGIBLES = new Set([
+    'StructuredValue',
+    'Intangible'
+]);
+
 export default class TypeCollector {
-    schemas : {[string] : Array<string>};
-    parents : {[string] : string};
+    schemas : TypeMembers;
+    parents : TypeInheritance;
     typeName : string;
 
     constructor(typeName : string) {
@@ -21,8 +27,12 @@ export default class TypeCollector {
     }
 
     recordParent(id: string, subClassOf : any) : string {
-        const parent = extractType(subClassOf);
+        let parent = extractType(subClassOf);
 
+        // Hack around 'Intangible' inheritance. Possible because the schema.org package is not current with website.
+        if (INTANGIBLES.has(parent)) {
+            parent = 'Thing';
+        }
         this.parents[id] = parent;
         return parent;
     }
@@ -44,15 +54,20 @@ export default class TypeCollector {
         if (fromType) {
             const fromName = extractType(fromType);
             const typeElem = element['schema:rangeIncludes'];
-            let type : Array<string>;
+            let type : Array<{name: string, last?: boolean}>;
 
             if (Array.isArray(typeElem)) {
                 type = typeElem.map(function (value) {
-                    return extractType(value);
+                    return {
+                        name: extractType(value)
+                    }
                 })
             } else {
-                type = [extractType(typeElem)];
+                type = [{
+                    name: extractType(typeElem)
+                }];
             }
+            type[type.length - 1].last = true;
             this.schemas[fromName] = [].concat({property: id, types: type}, this.schemas[fromName]);
         }
     }

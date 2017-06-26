@@ -1,0 +1,31 @@
+{
+  "name": "schema-dot-org-json-ld-components",
+  "version": "0.1.0",
+  "description": "Components to generate schema.org json-ld markup.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register"
+  },
+  "keywords": [
+    "schema.org",
+    "jsonld",
+    "react"
+  ],
+  "author": "John Bito (http://jwbito.ballardview.com/)",
+  "license": "UPL-1.0",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "chai": "^3.0.2",
+    "chai-enzyme": "^0.7.1",
+    "enzyme": "^2.9.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1",
+    "schema-dot-org-types": "^0.1.0"
+  },
+  "dependencies": {
+    "moment": "^2.18.1",
+    "react": "^15.6.1"
+  }
+}

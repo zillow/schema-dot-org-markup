@@ -1,0 +1,26 @@
+//@flow
+{{=<% %>=}}
+import objectAssign from 'object-assign';
+import {<% parentClass %>} from '<%& parentClassFile %>';
+import type { <% parentClass %>Type } from '<%& parentClassFile %>';
+<%# dependencies %>
+import type { <% . %>Type } from '<%& typeFile %>';
+<%/ dependencies %>
+export type <% className %>Type = {
+    <%# typeMembers %><% property %>?: <%# types %><% name %>Type<%^ last %> | <%/ last %><%/ types %>,
+    <%/ typeMembers %>} & <% parentClass %>Type;
+
+export class <% className %> extends <% parentClass %> {
+    <%# typeMembers %>
+    <% property %>: <%# types %><% name %>Type<%^ last %> | <%/ last %><%/ types %>;
+    <%/ typeMembers %>
+
+    constructor(props : <% className %>Type) {
+        super(props);
+        objectAssign(this, props);
+    }
+
+    getType(): string {
+        return ('<% className %>');
+    }
+}
