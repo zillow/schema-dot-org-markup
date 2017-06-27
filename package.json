@@ -1,7 +1,7 @@
 {
   "name": "schema-dot-org-markup",
   "version": "0.1.0",
-  "description": "Lightweight modules to generate Schema.org JSON-LD markup",
+  "description": "Lightweight modules to facilate working with Schema.org markup using flow",
   "main": "index.js",
   "scripts": {
     "test": "gulp test"
