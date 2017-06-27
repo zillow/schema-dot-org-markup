@@ -39,7 +39,9 @@ export default class TypeGenerator {
         this.typeInheritance = typeInheritance;
         this.typeFile = typeFile || '../types';
         this.fs = fs; // facilitate tests stubbing fs.
-        this.classFile = this.fs.readFileSync(path.join(__dirname, 'class-file.mustache'), 'utf8');
+        // access file relative to root of project so the transpiled file has access
+        const classFilename = path.join(__dirname, '..', 'tools', 'class-file.mustache');
+        this.classFile = this.fs.readFileSync(classFilename, 'utf8');
     }
 
     generateClass(className: string, parentClass: string, typeMembers: Array<?MemberType>, filename: ?string): string {

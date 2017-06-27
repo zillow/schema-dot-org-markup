@@ -4,21 +4,22 @@
   "description": "Classes with flow types to encapsulate schema.org markup attributes.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run test && flow && rm -rf ./lib && babel src -d lib && rollup -c -i src/index.js && flow-copy-source src lib",
-    "prepublish": "npm nun build",
-    "test": "mocha --compilers js:babel-core/register"
+    "build": "npm run test && flow && rm -rf ./lib && babel src -d lib && babel tools -d bin && rollup -c -i src/index.js && flow-copy-source src lib",
+    "prepublish": "npm run build",
+    "test": "mocha --compilers js:babel-core/register",
+    "transform-schema": "node bin/transform-schema.js"
   },
   "files": [
-    "lib"
+    "lib",
+    "bin",
+    "index.js",
+    "index.module.js"
   ],
   "module": "index.module.js",
   "keywords": [
     "schema.org",
     "jsonld"
   ],
-  "bin": {
-    "transform-schema": "tools/transform-schema.js"
-  },
   "author": "John Bito (http://jwbito.ballardview.com/)",
   "license": "UPL-1.0",
   "devDependencies": {
