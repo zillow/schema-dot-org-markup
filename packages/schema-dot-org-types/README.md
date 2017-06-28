@@ -1,5 +1,7 @@
-[Schema.org](http://schema.org) JS class package – schema-dot-org-types
-=======================================================================
+schema-dot-org-types
+====================
+>JS class package representing [Schema.org](http://schema.org) types.
+  
 This is an unofficial attempt at assembling the Schema.org types into a light-weight 
 JavaScript package that faciliates creating proper instances of schema markup with the
 support of [flow type annotations](http://flowtype.org/).

@@ -10,8 +10,9 @@
     "schema.org",
     "jsonld"
   ],
-  "author": "John Bito (http://jwbito.ballardview.com/)",
-  "license": "UPL-1.0",
+  "author": "Zillow (https://github.com/zillow)",
+  "repository": "https://github.com/zillow/schema-dot-org-markup",
+  "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-plugin-add-module-exports": "^0.2.1",

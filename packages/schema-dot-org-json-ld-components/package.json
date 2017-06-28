@@ -11,8 +11,9 @@
     "jsonld",
     "react"
   ],
-  "author": "John Bito (http://jwbito.ballardview.com/)",
-  "license": "UPL-1.0",
+  "author": "Zillow (https://github.com/zillow)",
+  "repository": "https://github.com/zillow/schema-dot-org-markup",
+  "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "chai": "^3.0.2",

@@ -1,6 +1,9 @@
-[Schema.org](http://schema.org) React component – schema-dot-org-json-ld-components
-====================================================================================
-This is an unnoficial attempt to facilitate rendering the json-ld format of schema.org
+schema-dot-org-json-ld-components
+=================================
+>React component to render [Schema.org](http://schema.org) types
+
+This is an unnoficial attempt to facilitate rendering the 
+[json-ld format of schema.org](https://developers.google.com/search/docs/guides/intro-structured-data)
 markup using [React](https://facebook.github.io/react/).
 
 Usage
