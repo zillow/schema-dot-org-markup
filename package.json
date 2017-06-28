@@ -1,8 +1,8 @@
 {
-  "name": "schema-dot-org-markup",
-  "version": "0.1.0",
+  "name": "UNUSED",
+  "version": "0.0.0",
   "description": "Lightweight modules to facilate working with Schema.org markup using flow",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "gulp test"
   },
