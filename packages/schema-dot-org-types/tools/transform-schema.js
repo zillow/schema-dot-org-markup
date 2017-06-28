@@ -89,7 +89,7 @@ if (fromFile) {
     readFunc = readType;
     source = fromFile;
 }
-const collector = new TypeCollector(program.opts().type);
+const collector = new TypeCollector(type);
 
 readFunc(source, collector.recordProperty.bind(collector)).then(function () {
     new TypeGenerator(collector.schemas, collector.parents).generateAll(toDir).then(function () {
