@@ -1,5 +1,5 @@
 // @flow
-import Inheritance from 'schema.org';
+import Inheritance from '@zillow/schema.org';
 import type {TypeMembers, TypeInheritance} from "./types";
 
 const inheritance = new Inheritance();
@@ -11,7 +11,6 @@ function extractType(domain : any) {
 }
 
 const INTANGIBLES = new Set([
-    'StructuredValue',
     'Intangible'
 ]);
 

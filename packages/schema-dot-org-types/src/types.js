@@ -31,6 +31,28 @@ export type {DataCatalogType} from './generated/data-catalog';
 export type {PriceSpecificationType} from './generated/price-specification';
 export type {PostalAddressType} from './generated/postal-address';
 export type {DatasetType} from './generated/dataset';
+export type {QuantitativeValueType} from './generated/quantitative-value';
+export type {LocationFeatureSpecificationType} from './generated/location-feature-specification';
+export type {GeospatialGeometryType} from './generated/geospatial-geometry';
+export type {ReviewType} from './generated/review';
+export type {QualitativeValueType} from './generated/qualitative-value';
+export type {OfferType} from './generated/offer';
+export type {AggregateRatingType} from './generated/aggregate-rating';
+export type {EnumerationType} from './generated/enumeration';
+export type {MonetaryAmountType} from './generated/monetary-amount';
+export type {RatingType} from './generated/rating';
+export type {TypeAndQuantityNodeType} from './generated/type-and-quantity-node';
+export type {ClassType} from './generated/class';
+export type {PropertyType} from './generated/property';
+export type {CommentType} from './generated/comment';
+export type {QuestionType} from './generated/question';
+export type {LoanOrCreditType} from './generated/loan-or-credit';
+export type {WarrantyPromiseType} from './generated/warranty-promise';
+export type {BroadcastFrequencySpecificationType} from './generated/broadcast-frequency-specification';
+export type {RepaymentSpecificationType} from './generated/repayment-specification';
+export type {BrandType} from './generated/brand';
+export type {ListItemType} from './generated/list-item'
+export type {SingleFamilyResidenceType} from './generated/single-family-residence';
 
 import type moment from 'moment';
 
@@ -51,6 +73,7 @@ export type BooleanType = boolean;
 export type EventStatusTypeType = string;
 export type GenderTypeType = string;
 export type ContactPointOptionType = string;
+export type LanguageType = string;
 export type TimeType = string; // ISO-8601 time-of-day
 export type DayOfWeekType =
     'Sunday'
@@ -85,4 +108,22 @@ export type DataDownloadType = MediaObjectType;
 import type {OrganizationType} from './generated/organization';
 export type EducationalOrganizationType = OrganizationType;
 
-export type MonetaryAmountType = Object;
+import type {ThingType} from './generated/thing';
+export type StructuredValueType = ThingType;
+
+import type {EnumerationType} from './generated/enumeration';
+export type PhysicalActivityCategoryType = EnumerationType;
+export type BusinessEntityTypeType = EnumerationType;
+export type BusinessFunctionType = EnumerationType;
+export type DeliveryMethodType = EnumerationType;
+export type ItemAvailabilityType = EnumerationType;
+export type PaymentMethodType = EnumerationType;
+export type OfferItemConditionType = EnumerationType;
+export type ItemListOrderTypeType = EnumerationType;
+export type WarrantyScopeType = WarrantyScopeType;
+
+import type {CommentType} from './generated/comment';
+export type AnswerType = CommentType;
+
+import type {ItemListType} from './generated/item-list';
+export type OfferCatalogType = ItemListType;
