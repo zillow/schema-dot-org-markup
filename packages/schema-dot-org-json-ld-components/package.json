@@ -1,0 +1,26 @@
+{
+  "name": "schema-dot-org-json-ld-components",
+  "version": "0.1.0",
+  "description": "Components to generate schema.org json-ld markup.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run test && flow && rm -rf ./lib && babel src -d . && flow-copy-source src .",
+    "test": "mocha --compilers js:babel-core/register"
+  },
+  "keywords": [
+    "schema.org",
+    "jsonld",
+    "react"
+  ],
+  "author": "Zillow (https://github.com/zillow)",
+  "repository": "https://github.com/zillow/schema-dot-org-markup",
+  "license": "ISC",
+  "devDependencies": {
+    "flow-copy-source": "^1.2.0"
+  },
+  "dependencies": {
+    "moment": "^2.18.1",
+    "react": "^15.6.1",
+    "schema-dot-org-types": "^0.1.0"
+  }
+}

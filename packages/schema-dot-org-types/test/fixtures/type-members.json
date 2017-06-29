@@ -1,0 +1,1213 @@
+{
+  "CreativeWork": [
+    {
+      "property": "inLanguage",
+      "types": [
+        {
+          "name": "Language"
+        },
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "position",
+      "types": [
+        {
+          "name": "Text"
+        },
+        {
+          "name": "Integer",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "publishingPrinciples",
+      "types": [
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "offers",
+      "types": [
+        {
+          "name": "Offer",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "recordedAt",
+      "types": [
+        {
+          "name": "Event",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "material",
+      "types": [
+        {
+          "name": "URL"
+        },
+        {
+          "name": "Text"
+        },
+        {
+          "name": "Product",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "accessibilityAPI",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "audio",
+      "types": [
+        {
+          "name": "AudioObject",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "translator",
+      "types": [
+        {
+          "name": "Person"
+        },
+        {
+          "name": "Organization",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "interactionStatistic",
+      "types": [
+        {
+          "name": "InteractionCounter",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "educationalAlignment",
+      "types": [
+        {
+          "name": "AlignmentObject",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "learningResourceType",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "dateModified",
+      "types": [
+        {
+          "name": "DateTime"
+        },
+        {
+          "name": "Date",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "releasedEvent",
+      "types": [
+        {
+          "name": "PublicationEvent",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "aggregateRating",
+      "types": [
+        {
+          "name": "AggregateRating",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "discussionUrl",
+      "types": [
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "citation",
+      "types": [
+        {
+          "name": "CreativeWork"
+        },
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "spatialCoverage",
+      "types": [
+        {
+          "name": "Place",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "character",
+      "types": [
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "datePublished",
+      "types": [
+        {
+          "name": "Date",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "sponsor",
+      "types": [
+        {
+          "name": "Organization"
+        },
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "keywords",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "encoding",
+      "types": [
+        {
+          "name": "MediaObject",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "timeRequired",
+      "types": [
+        {
+          "name": "Duration",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "about",
+      "types": [
+        {
+          "name": "Thing",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "sourceOrganization",
+      "types": [
+        {
+          "name": "Organization",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "workTranslation",
+      "types": [
+        {
+          "name": "CreativeWork",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "commentCount",
+      "types": [
+        {
+          "name": "Integer",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "isBasedOnUrl",
+      "types": [
+        {
+          "name": "CreativeWork"
+        },
+        {
+          "name": "Product"
+        },
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "temporalCoverage",
+      "types": [
+        {
+          "name": "DateTime"
+        },
+        {
+          "name": "URL"
+        },
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "isFamilyFriendly",
+      "types": [
+        {
+          "name": "Boolean",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "associatedMedia",
+      "types": [
+        {
+          "name": "MediaObject",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "mentions",
+      "types": [
+        {
+          "name": "Thing",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "award",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "locationCreated",
+      "types": [
+        {
+          "name": "Place",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "copyrightHolder",
+      "types": [
+        {
+          "name": "Person"
+        },
+        {
+          "name": "Organization",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "editor",
+      "types": [
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "hasPart",
+      "types": [
+        {
+          "name": "CreativeWork",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "creator",
+      "types": [
+        {
+          "name": "Organization"
+        },
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "headline",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "accountablePerson",
+      "types": [
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "accessibilitySummary",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "dateCreated",
+      "types": [
+        {
+          "name": "Date"
+        },
+        {
+          "name": "DateTime",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "translationOfWork",
+      "types": [
+        {
+          "name": "CreativeWork",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "mainEntity",
+      "types": [
+        {
+          "name": "Thing",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "accessibilityFeature",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "copyrightYear",
+      "types": [
+        {
+          "name": "Number",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "exampleOfWork",
+      "types": [
+        {
+          "name": "CreativeWork",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "audience",
+      "types": [
+        {
+          "name": "Audience",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "typicalAgeRange",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "contentLocation",
+      "types": [
+        {
+          "name": "Place",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "producer",
+      "types": [
+        {
+          "name": "Organization"
+        },
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "reviews",
+      "types": [
+        {
+          "name": "Review",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "educationalUse",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "accessMode",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "contentReferenceTime",
+      "types": [
+        {
+          "name": "DateTime",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "publisherImprint",
+      "types": [
+        {
+          "name": "Organization",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "accessibilityHazard",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "contributor",
+      "types": [
+        {
+          "name": "Organization"
+        },
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "fileFormat",
+      "types": [
+        {
+          "name": "Text"
+        },
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "version",
+      "types": [
+        {
+          "name": "Number"
+        },
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "provider",
+      "types": [
+        {
+          "name": "Organization"
+        },
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "publication",
+      "types": [
+        {
+          "name": "PublicationEvent",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "isPartOf",
+      "types": [
+        {
+          "name": "CreativeWork",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "funder",
+      "types": [
+        {
+          "name": "Person"
+        },
+        {
+          "name": "Organization",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "accessibilityControl",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "video",
+      "types": [
+        {
+          "name": "VideoObject",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "genre",
+      "types": [
+        {
+          "name": "Text"
+        },
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "thumbnailUrl",
+      "types": [
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "isAccessibleForFree",
+      "types": [
+        {
+          "name": "Boolean",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "awards",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "comment",
+      "types": [
+        {
+          "name": "Comment",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "license",
+      "types": [
+        {
+          "name": "CreativeWork"
+        },
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "publisher",
+      "types": [
+        {
+          "name": "Organization"
+        },
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "contentRating",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "isBasedOn",
+      "types": [
+        {
+          "name": "Product"
+        },
+        {
+          "name": "CreativeWork"
+        },
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "workExample",
+      "types": [
+        {
+          "name": "CreativeWork",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "author",
+      "types": [
+        {
+          "name": "Person"
+        },
+        {
+          "name": "Organization",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "review",
+      "types": [
+        {
+          "name": "Review",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "schemaVersion",
+      "types": [
+        {
+          "name": "Text"
+        },
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "accessModeSufficient",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "encodings",
+      "types": [
+        {
+          "name": "MediaObject",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "interactivityType",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "alternativeHeadline",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "text",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    }
+  ],
+  "VideoObject": [
+    {
+      "property": "videoFrameSize",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "videoQuality",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "director",
+      "types": [
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "actor",
+      "types": [
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "actors",
+      "types": [
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "musicBy",
+      "types": [
+        {
+          "name": "MusicGroup"
+        },
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "thumbnail",
+      "types": [
+        {
+          "name": "ImageObject",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "directors",
+      "types": [
+        {
+          "name": "Person",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "caption",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "transcript",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    }
+  ],
+  "Thing": [
+    {
+      "property": "sameAs",
+      "types": [
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "description",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "disambiguatingDescription",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "url",
+      "types": [
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "identifier",
+      "types": [
+        {
+          "name": "URL"
+        },
+        {
+          "name": "PropertyValue"
+        },
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "name",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "alternateName",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "mainEntityOfPage",
+      "types": [
+        {
+          "name": "CreativeWork"
+        },
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "image",
+      "types": [
+        {
+          "name": "URL"
+        },
+        {
+          "name": "ImageObject",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "potentialAction",
+      "types": [
+        {
+          "name": "Action",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "additionalType",
+      "types": [
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    }
+  ],
+  "MediaObject": [
+    {
+      "property": "duration",
+      "types": [
+        {
+          "name": "Duration",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "associatedArticle",
+      "types": [
+        {
+          "name": "NewsArticle",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "productionCompany",
+      "types": [
+        {
+          "name": "Organization",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "contentUrl",
+      "types": [
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "encodesCreativeWork",
+      "types": [
+        {
+          "name": "CreativeWork",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "encodingFormat",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "bitrate",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "uploadDate",
+      "types": [
+        {
+          "name": "Date",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "embedUrl",
+      "types": [
+        {
+          "name": "URL",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "playerType",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "contentSize",
+      "types": [
+        {
+          "name": "Text",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "height",
+      "types": [
+        {
+          "name": "QuantitativeValue"
+        },
+        {
+          "name": "Distance",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "expires",
+      "types": [
+        {
+          "name": "Date",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "width",
+      "types": [
+        {
+          "name": "QuantitativeValue"
+        },
+        {
+          "name": "Distance",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "requiresSubscription",
+      "types": [
+        {
+          "name": "Boolean",
+          "last": true
+        }
+      ]
+    },
+    {
+      "property": "regionsAllowed",
+      "types": [
+        {
+          "name": "Place",
+          "last": true
+        }
+      ]
+    }
+  ]
+}

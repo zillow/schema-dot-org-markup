@@ -1,19 +1,24 @@
 {
   "name": "schema-dot-org-markup",
-  "version": "0.1.0",
-  "description": "Lightweight modules to generate Schema.org markup",
-  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Lightweight modules to facilate working with Schema.org markup using flow",
+  "private": true,
   "scripts": {
-    "test": "gulp test"
+    "bootstrap": "lerna bootsrap",
+    "test": "gulp test",
+    "publish": "lerna publish"
   },
   "keywords": [
     "schema.org",
     "jsonld"
   ],
-  "author": "John Bito <jwb@ballardview.com>",
+  "author": "Zillow (https://github.com/zillow)",
+  "repository": "https://github.com/zillow/schema-dot-org-markup",
   "license": "ISC",
   "devDependencies": {
+    "@zillow/schema.org": "^2.6.0",
     "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-lodash": "^3.2.11",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -22,6 +27,16 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
-    "lerna": "^2.0.0-rc.4"
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.7.1",
+    "enzyme": "^2.9.0",
+    "expect": "^1.20.2",
+    "flow-bin": "^0.46.0",
+    "lerna": "^2.0.0-rc.4",
+    "mocha": "^3.4.2",
+    "moment": "^2.18.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1"
   }
 }
