@@ -12,6 +12,10 @@
     "jsonld",
     "react"
   ],
+  "files": [
+    "lib",
+    "index.js"
+  ],
   "author": "Zillow (https://github.com/zillow)",
   "repository": "https://github.com/zillow/schema-dot-org-markup",
   "license": "ISC",
