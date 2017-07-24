@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootsrap",
-    "test": "gulp test",
+    "test": "lerna exec npm test",
     "publish": "lerna publish"
   },
   "keywords": [
@@ -16,7 +16,6 @@
   "repository": "https://github.com/zillow/schema-dot-org-markup",
   "license": "ISC",
   "devDependencies": {
-    "@zillow/schema.org": "^2.6.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-plugin-add-module-exports": "^0.2.1",
@@ -32,11 +31,12 @@
     "enzyme": "^2.9.0",
     "expect": "^1.20.2",
     "flow-bin": "^0.46.0",
-    "lerna": "^2.0.0-rc.4",
+    "lerna": "^2.0.0-rc.5",
     "mocha": "^3.4.2",
     "moment": "^2.18.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-test-renderer": "^15.6.1"
+    "react-test-renderer": "^15.6.1",
+    "schema.org": "^3.0.0"
   }
 }
