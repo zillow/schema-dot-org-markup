@@ -1,6 +1,6 @@
 {
   "name": "schema-dot-org-json-ld-components",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Components to generate schema.org json-ld markup.",
   "main": "index.js",
   "scripts": {
