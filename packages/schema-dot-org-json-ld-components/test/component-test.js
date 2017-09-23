@@ -1,5 +1,5 @@
 //@flow
-import {shallow} from 'enzyme';
+import {render} from 'enzyme';
 import chaiEnzyme from 'chai-enzyme';
 import {describe, it} from 'mocha';
 import chai, {expect} from 'chai';
@@ -31,7 +31,7 @@ describe('The json-ld component', () => {
     props.uploadDate = DATE_PROBE;
 
     const schemaObject = new VideoObject(props);
-    const tree = shallow(<Component markup={schemaObject} />);
+    const tree = render(<Component markup={schemaObject} />);
 
     it('renders a script tag', () => {
     // $FlowFixMe
@@ -40,6 +40,10 @@ describe('The json-ld component', () => {
 
     it('has JSON contents', () => {
         parseJson(tree.text());
+    });
+
+    it('does not contain the html entity for quote', () => {
+        expect(tree.html()).to.not.contain('&quot;');
     });
 
     it('provides JSON with the expected schema type', () => {
