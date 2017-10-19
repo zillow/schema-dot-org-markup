@@ -1,5 +1,4 @@
 //@flow
-import {describe, it, afterEach} from 'mocha';
 import {expect} from 'chai';
 import fs from 'fs';
 import sinon from 'sinon';

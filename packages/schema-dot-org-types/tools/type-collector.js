@@ -1,5 +1,5 @@
 // @flow
-import Inheritance from '@zillow/schema.org';
+import Inheritance from 'schema.org';
 import type {TypeMembers, TypeInheritance} from "./types";
 
 const inheritance = new Inheritance();

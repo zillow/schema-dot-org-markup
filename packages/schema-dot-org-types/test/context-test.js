@@ -1,5 +1,4 @@
 //@flow
-import {describe, it} from 'mocha';
 import {expect} from 'chai';
 import {Context, DEFAULT_CONTEXT} from '../src/context';
 

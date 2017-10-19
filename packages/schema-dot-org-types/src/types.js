@@ -53,6 +53,8 @@ export type {RepaymentSpecificationType} from './generated/repayment-specificati
 export type {BrandType} from './generated/brand';
 export type {ListItemType} from './generated/list-item'
 export type {SingleFamilyResidenceType} from './generated/single-family-residence';
+export type {ItemListType} from './generated/item-list';
+export type {BreadcrumbList} from './shim/breadcrumb-list'
 
 import type moment from 'moment';
 
