@@ -11,7 +11,7 @@ export function toFilename(name: string) {
 }
 
 export function dependencies(typeMembers: Array<?MemberType>, className?: string, parentClass? : string) {
-    return new Set(
+    const result : Set<?string> = new Set(
         [].concat(...typeMembers.map(function (property) {
             return property && property.types.map(function (type) {
                 return type.name
@@ -21,6 +21,7 @@ export function dependencies(typeMembers: Array<?MemberType>, className?: string
                 && (!parentClass || parentClass !== item)
                 && (!className || className !== item);
     }));
+    return result;
 }
 
 export function outputFilename(dir: string, className: string) {
