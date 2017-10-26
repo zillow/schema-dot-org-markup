@@ -1,5 +1,6 @@
 //@flow
 export {Thing} from './generated/thing';
+export {ListItem} from './generated/list-item';
 export {VideoObject} from './generated/video-object';
 export {Place} from './generated/place';
 export {PostalAddress} from './generated/postal-address';
