@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run test && flow && rm -rf ./lib && babel src -d . && flow-copy-source src .",
     "prepublish": "npm run build",
-    "test": "mocha --compilers js:babel-core/register"
+    "test": "mocha --compilers js:babel-register"
   },
   "keywords": [
     "schema.org",
@@ -21,11 +21,13 @@
   "repository": "https://github.com/zillow/schema-dot-org-markup",
   "license": "ISC",
   "devDependencies": {
-    "flow-copy-source": "^1.2.0"
+    "babel-register": "^6.26.0",
+    "flow-copy-source": "^1.2.0",
+    "mocha": "^4.0.1",
+    "schema-dot-org-types": "^0.1.6"
   },
   "dependencies": {
     "moment": "^2.18.1",
-    "react": "^15.6.1",
-    "schema-dot-org-types": "^0.1.6"
+    "react": "^15.6.1"
   }
 }
