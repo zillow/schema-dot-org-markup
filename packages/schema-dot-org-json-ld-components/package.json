@@ -27,7 +27,9 @@
     "schema-dot-org-types": "^0.1.6"
   },
   "dependencies": {
-    "moment": "^2.18.1",
-    "react": "^15.6.1"
+    "moment": "^2.18.1"
+  },
+  "peerDependencies": {
+    "react": "^15.6.2 || ^16.0.0"
   }
 }

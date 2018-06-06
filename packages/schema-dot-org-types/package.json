@@ -4,7 +4,7 @@
   "description": "Classes with flow types to encapsulate schema.org markup attributes.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run test && flow && rm -rf ./lib && babel src -d lib && babel tools -d bin && rollup -c -i src/index.js && flow-copy-source src lib",
+    "build": "npm run test && rm -rf ./lib && babel src -d lib && babel tools -d bin && rollup -c -i src/index.js && flow-copy-source src lib && flow",
     "prepublish": "npm run build",
     "test": "mocha --compilers js:babel-register ./test",
     "transform-schema": "node bin/transform-schema.js"

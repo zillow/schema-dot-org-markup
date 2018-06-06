@@ -1,0 +1,5 @@
+node_modules/
+packages/*/lib/
+packages/*/bin/
+packages/schema-dot-org-types/index.js
+packages/schema-dot-org-types/index.module.js
