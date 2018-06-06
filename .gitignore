@@ -3,3 +3,6 @@ packages/*/lib/
 packages/*/bin/
 packages/schema-dot-org-types/index.js
 packages/schema-dot-org-types/index.module.js
+packages/schema-dot-org-json-ld-components/index.js
+packages/schema-dot-org-json-ld-components/index.jsx.flow
+package-lock.json

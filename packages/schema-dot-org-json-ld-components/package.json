@@ -4,8 +4,8 @@
   "description": "Components to generate schema.org json-ld markup.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run test && flow && rm -rf ./lib && babel src -d . && flow-copy-source src .",
-    "prepublish": "npm run build",
+    "build": "rm -rf ./lib && babel src -d . && flow-copy-source src .",
+    "prepare": "npm run build",
     "test": "mocha --compilers js:babel-register"
   },
   "keywords": [

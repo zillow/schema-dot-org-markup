@@ -4,8 +4,8 @@
   "description": "Classes with flow types to encapsulate schema.org markup attributes.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run test && rm -rf ./lib && babel src -d lib && babel tools -d bin && rollup -c -i src/index.js && flow-copy-source src lib && flow",
-    "prepublish": "npm run build",
+    "build": "rm -rf ./lib && babel src -d lib && babel tools -d bin && rollup -c -i src/index.js && flow-copy-source src lib",
+    "prepare": "npm run build",
     "test": "mocha --compilers js:babel-register ./test",
     "transform-schema": "node bin/transform-schema.js"
   },
@@ -32,14 +32,8 @@
     "find-up": "latest",
     "flow-copy-source": "^1.1.0",
     "load-json-file": "latest",
-    "mustache": "^2.3.0",
     "request": "^2.81.0",
-    "rollup": "^0.43.0",
-    "rollup-plugin-babel": "latest",
-    "rollup-plugin-commonjs": "latest",
-    "rollup-plugin-node-resolve": "latest",
     "schema.org": "^3.1.0",
-    "sinon": "^2.3.1",
     "url-template": "^2.0.8"
   },
   "dependencies": {

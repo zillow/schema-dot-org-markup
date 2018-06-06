@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "test": "lerna exec --scope schema-dot-org-types npm run build && lerna exec --concurrency 1 npm test",
-    "publish": "lerna publish"
+    "test": "lerna exec npm run build && lerna exec --concurrency 1 npm test && flow",
+    "publish": "lerna publish --concurrency 1"
   },
   "keywords": [
     "schema.org",
