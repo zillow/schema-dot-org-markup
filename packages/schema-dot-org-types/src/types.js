@@ -3,6 +3,7 @@
 export type {ThingType} from './generated/thing';
 export type {CreativeWorkType} from './generated/creative-work';
 export type {VideoObjectType} from './generated/video-object';
+export type {ArticleType} from './generated/article';
 export type {NewsArticleType} from './generated/news-article';
 export type {InteractionCounterType} from './generated/interaction-counter';
 export type {MediaObjectType} from './generated/media-object';
@@ -54,7 +55,17 @@ export type {BrandType} from './generated/brand';
 export type {ListItemType} from './generated/list-item'
 export type {SingleFamilyResidenceType} from './generated/single-family-residence';
 export type {ItemListType} from './generated/item-list';
-export type {BreadcrumbListType} from './shim/breadcrumb-list'
+export type {BreadcrumbListType} from './shim/breadcrumb-list';
+export type {TripType} from './generated/trip';
+export type {SocialMediaPostingType} from './generated/social-media-posting';
+export type {BlogPostingType} from './generated/blog-posting';
+export type {LiveBlogPostingType} from './generated/live-blog-posting';
+export type {DemandType} from './generated/demand';
+export type {MonetaryAmountDistributionType} from './generated/monetary-amount-distribution';
+export type {OccupationType} from './generated/occupation';
+export type {OwnershipInfoType} from './generated/ownership-info';
+export type {ProgramMembershipType} from './generated/program-membership';
+export type {ImageObjectType} from './generated/image-object';
 
 import type moment from 'moment';
 
@@ -67,7 +78,6 @@ export type URLType = URL;
 
 export type TextType = string;
 export type ActionType = string;
-export type ImageObjectType = string;
 export type PropertyValueType = string;
 export type NumberType = number;
 export type IntegerType = number;
@@ -109,6 +119,7 @@ export type DataDownloadType = MediaObjectType;
 
 import type {OrganizationType} from './generated/organization';
 export type EducationalOrganizationType = OrganizationType;
+export type MusicGroupType = OrganizationType;
 
 import type {ThingType} from './generated/thing';
 export type StructuredValueType = ThingType;
@@ -126,6 +137,13 @@ export type WarrantyScopeType = WarrantyScopeType;
 
 import type {CommentType} from './generated/comment';
 export type AnswerType = CommentType;
+export type CorrectionCommentType = CommentType;
 
 import type {ItemListType} from './generated/item-list';
 export type OfferCatalogType = ItemListType;
+
+import type {SocialMediaPostingType} from './generated/social-media-posting';
+export type DiscussionForumPosting = SocialMediaPostingType;
+
+import type {QuantitativeValueType} from "./generated/quantitative-value";
+export type DistanceType = QuantitativeValueType;
